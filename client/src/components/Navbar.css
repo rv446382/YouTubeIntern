@@ -1,0 +1,83 @@
+/* Common styles for both mobile and laptop */
+.header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #202020;
+}
+
+.header_logo {
+    height: 20px;
+    width: 40px;
+    object-fit: contain;
+   
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+}
+
+.header_middle {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.SearchInput {
+    flex: 1;
+    border: none;
+    height: 25px !important;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.header_input {
+    display: flex;
+    align-self: center;
+    width: 45%;
+    outline: none;
+}
+
+.header_right {
+    display: flex;
+    align-self: center;
+}
+
+.header_searchBtn {
+    width: 50px !important;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color: gray;
+}
+
+.header_icons {
+    margin-right: 20px;
+    color: rgb(83, 83, 83) !important;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .header_input {
+        width: 100%;
+    }
+}
+
+
+/* @media only screen and (min-width: 768){
+    .header_input {
+       display: none;
+    }
+} */
+
+@media only screen and (max-width: 488px){
+    .header_input {
+       display: none;
+    }
+}
